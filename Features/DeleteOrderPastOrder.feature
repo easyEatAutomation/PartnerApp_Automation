@@ -1,5 +1,5 @@
-#Feature: Launch URL and Login with Credentials with PIN
-#
+Feature: Delete Past Order
+
   #@smoke @sanity
   #Scenario: Open Chrome Browser
     #Given I open "Chrome" browser and "https://partner.easyeat.ai/login"
@@ -16,21 +16,22 @@
     #Then user click  "1" 
     #Then click on SignIn button
     #Then it will redirect to the dashboard
-#	
-#	@smoke	
-#	Scenario: Delete Order From Past OrderDashboard
-#
-#	 #Given user is on Dashboard	    
-#	 When User clicks on AutomateSMS if available
-#	 When user click on Create New Order button
-   #Then select DineIn
-   #Then select Items
-   #And Click on Create Order button
-   #Then select table
-   #Then Click on Settle Bill button
-   #Then User will select payment option Master Card
-   #And Click on Paid button
+	
+	@smoke	
+	Scenario: Delete Order From Past OrderDashboard
+
+	 #Given user is on Dashboard	    
+	When User clicks on AutomateSMS if available
+   When user click on Create New Order button
+   Then select DineIn
+   And User will select items from menu
+   And Click on Create Order button
+   Then select table  
+   Then Click on Settle Bill from dashboard button
+   Then User will select payment option Master Card
+   And Click on Paid button
+   Then user will click on done button
    #Then User will click on Complete button
-   #Then user will select past order
-   #Then Click on Delete order button
-   #And Click on yes Delete button
+    When user click on Past Orders tab
+   Then Click on Delete order button
+   And Click on yes Delete button

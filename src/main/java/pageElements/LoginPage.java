@@ -17,15 +17,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import WebBase.WebBase;
-import kotlin.jvm.Throws;
+//import kotlin.jvm.Throws;
 
 public class LoginPage extends WebBase {
 
-	//public static WebDriver driver;
+	public WebDriver driver;
 
 	private By usernamevalue = By.id("email");
 	private By passwordvalue = By.cssSelector("input[type=password]");
-	private By loginButton = By.cssSelector("button[class='wd-100 login-action-btn ant-btn ant-btn-primary ant-btn-lg']");
+	private By loginButton = By.xpath("/html/body/app-root/body/div/div/div/app-login/div/div[1]/div/form/nz-form-item[3]/nz-form-control/div/div/button/span");
 	private By login_sucess = By.xpath("//*[@id=\"cdk-overlay-0\"]/nz-message-container/div");
 	private By click_one = By.xpath("//*[@id=\"cb_right\"]/div[1]/div[3]/div[3]/div[3]");
 	private By click_two = By.xpath("//*[@id=\"cb_right\"]/div[1]/div[3]/div[2]/div[2]");
@@ -57,7 +57,6 @@ public class LoginPage extends WebBase {
 	public void login_successfully() throws InterruptedException {
 		Thread.sleep(1000);
 		toastmessage(login_sucess, "Login successful", 10);
-Thread.sleep(1000);
 
 
 

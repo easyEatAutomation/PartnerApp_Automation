@@ -20,6 +20,7 @@ import pageElements.CashDrawerKick;
 import pageElements.CreateDineInOrders;
 import pageElements.CreateTakeAwayOrder;
 import pageElements.LoginPage;
+import pageElements.LoginPageMobile;
 import pageElements.OtherOptions;
 import pageElements.PastRevertOrder;
 import pageElements.POSPrint;
@@ -41,10 +42,13 @@ public class Login {
 
 
 	public WebDriver driver;
+	public static WebDriver driver1;
+
 
 
 	WebBase webBase = new WebBase();
 	LoginPage loginPage  = new LoginPage();
+	LoginPageMobile loginPageMobile  = new LoginPageMobile();
 	CreateDineInOrders CreateDineInOrders = new CreateDineInOrders();
 	CreateTakeAwayOrder CreateTakeAwayOrder = new CreateTakeAwayOrder();
 	OtherOptions OtherOptions = new OtherOptions();
@@ -54,7 +58,7 @@ public class Login {
 	CashDrawerCashOut CashDrawerCashOut = new CashDrawerCashOut();
 	CashDrawerKick CashDrawerKick = new CashDrawerKick ();
 	PastRevertOrder PastRevertOrder = new PastRevertOrder ();
-	POSPrint POSPrint = new POSPrint ();
+	POSPrint POSPrint = new POSPrint ();     
 	CompleteMergeBillOrder CompleteMergeBillOrder = new CompleteMergeBillOrder ();
 	DeleteOrderRunningOrder DeleteOrderRunningOrder = new DeleteOrderRunningOrder();
 	SendEmail SendEmail = new SendEmail ();
@@ -69,14 +73,17 @@ public class Login {
 
 
 
-	/*Login flow*/
+	/*Web Login flow*/
+
+
 
 	@Given("I open {string} browser and {string}")
 	public void i_open_browser_and(String browserName, String URL) {
 		webBase.createDriver(browserName);
 		webBase.openWebsite(URL);
 	}
-
+	
+	
 	@When("User is on Login Page")
 	public void user_is_on_Login_page() {
 		// Write code here that turns the phrase above into concrete actions
@@ -90,7 +97,10 @@ public class Login {
 
 		loginPage.enterUsername(username);
 		loginPage.enterPassword(password);
+		
+		
 	}
+	
 
 	@And("Click on Login button")
 	public void click_on_loginButton() throws InterruptedException {
@@ -128,15 +138,66 @@ public class Login {
 		loginPage.click_SignIn();
 
 	}
+	
+	
+	
+/*Mobile App Login flow*/
+
+	
+	
+	@Given("I open application")
+    public void i_open_browser_and() {
+        WebBase.launchApp();
+	}
+
+	@Then("User enters mobile credentials {string} and {string}")
+	public void user_enters_mobile_credentials_and(String username, String password) throws InterruptedException {
+
+		loginPageMobile.enterUsername(username);
+		loginPageMobile.enterPassword(password);
+	}
+	
+
+	@And("Click on app Login button")
+	public void click_on_app_Login_button() throws InterruptedException {
+		loginPageMobile.loginClick();
+	}
+
+
+	@Then("Message displayed Login Successfully on app")
+	public void message_displayed_login_successfully_on_app() throws InterruptedException {
+		loginPageMobile.login_successfully();
+
+	}
+
+
+	@Then("user click mobilePIN {string}")
+	public void user_click_mobilePIN(String string) throws InterruptedException {
+	
+		loginPageMobile.click_one();
+		loginPageMobile.click_two();
+		loginPageMobile.click_three();
+		loginPageMobile.click_four();
+
+	}
+	
+	@Then("click on SignIn button on App")
+	public void click_on_SignIn_button_on_App() throws InterruptedException {
+		loginPageMobile.click_SignIn();
+
+	}
+	
+	
+	
 
 	/*Create Dine In Order Flow*/
 
 
 
-	@Then("it will redirect to the dashboard")
-	public void it_will_redirect_to_the_dashboard() {
-
-	}
+		@Then("it will redirect to the dashboard")
+		public void it_will_redirect_to_the_dashboard() {
+	
+		}
 
 	@When("User clicks on AutomateSMS if available")
 	public void user_clicks_on_AutomateSMS_if_available() throws InterruptedException {
@@ -834,7 +895,6 @@ public void user_will_click_on_counter_print_button1() throws InterruptedExcepti
 	@Then("Click on Overlay")
 	public void click_on_Overlay() throws InterruptedException {
 		ApplyDiscount.ClickOverlay();
-
 
 	}
 	@Then("click on Percentage Discount Tab")

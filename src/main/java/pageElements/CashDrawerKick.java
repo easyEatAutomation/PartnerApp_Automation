@@ -10,9 +10,9 @@ public class CashDrawerKick extends WebBase {
 	public static WebDriver driver;
 	
 	
-private By DrawerKick = By.xpath("//*[@id=\"mat-dialog-8\"]/app-open-drawer/div/div[2]/div/div/div[4]");
+private By DrawerKick = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-open-drawer/div/div[2]/div/div/div[4]");
 private By NameKick = By.xpath("//input[contains(@formcontrolname, 'name')]");
-private By DoneDrawerKick = By.xpath("//*[@id=\"mat-dialog-9\"]/app-drawer-kick/div/div[2]/div[2]/button");
+private By DoneDrawerKick = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-drawer-kick/div/div[2]/div[2]/button");
 //Single DoneDrawerKick Feature file //*[@id=\"mat-dialog-2\"]/app-drawer-kick/div/div[2]/div[2]/button");
 
 

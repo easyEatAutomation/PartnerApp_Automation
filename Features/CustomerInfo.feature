@@ -1,21 +1,21 @@
 Feature: Add/Edit Customer Information
 
- @smoke @sanity
-  Scenario: Open Chrome Browser
-    Given I open "Chrome" browser and "https://partner.easyeat.ai/login"
-@smoke @sanity 
-  Scenario: Login with valid Credentials
-    When User is on Login Page
-    Then User enters "ajai@easyeat.ai" and "ajai1234"
-    And Click on Login button
-    Then User should get logged in
-    And Message displayed Login Successfully
-    Then user click  "1" 
-    Then user click  "2" 
-    Then user click  "4" 
-    Then user click  "1" 
-    Then click on SignIn button
-    Then it will redirect to the dashboard
+ #@smoke @sanity
+  #Scenario: Open Chrome Browser
+    #Given I open "Chrome" browser and "https://partner.easyeat.ai/login"
+#@smoke @sanity 
+  #Scenario: Login with valid Credentials
+    #When User is on Login Page
+    #Then User enters "ajai@easyeat.ai" and "ajai1234"
+    #And Click on Login button
+    #Then User should get logged in
+    #And Message displayed Login Successfully
+    #Then user click  "1" 
+    #Then user click  "2" 
+    #Then user click  "4" 
+    #Then user click  "1" 
+    #Then click on SignIn button
+    #Then it will redirect to the dashboard
 	
 	
 
@@ -47,10 +47,12 @@ Scenario: Enter Mobile Number then Save after creating DineIn order
    And Click on Create Order button
    Then select table    
    
+   
    @sanity
    Scenario: Save Customer Info when creating Take Away order
+   
     When User clicks on AutomateSMS if available
-    When User clicks on Create Order button from Dashboard
+   When user click on Create New Order button
     And User will select Take Away from Pop up
     And User will select items from menu
     Then User will click on Add Customer Details Button
@@ -84,7 +86,7 @@ Scenario: Enter Mobile Number then Save after creating DineIn order
     Then User will click on Complete Order
    
    @sanity
-	Scenario: Save Customer Info when creating GrabDelivery Order
+	Scenario: Save Customer Info when creating GrabPickUp Order
    
     When User clicks on AutomateSMS if available
    And user click on Create New Order button
@@ -103,8 +105,6 @@ Scenario: Enter Mobile Number then Save after creating DineIn order
     Then User will click on Complete Order
    
 	
-	
-
 
 
    
@@ -124,7 +124,7 @@ Scenario: Enter Mobile Number then Save after creating DineIn order
    @sanity
    Scenario: Save Customer Info when creating Take Away order
     When User clicks on AutomateSMS if available
-    When User clicks on Create Order button from Dashboard
+    And user click on Create New Order button
     And User will select Take Away from Pop up
     And User will select items from menu
     Then User will click on Add Customer Details Button

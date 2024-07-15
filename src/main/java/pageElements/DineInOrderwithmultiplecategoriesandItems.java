@@ -40,7 +40,7 @@ public void clickOnItemNames() {
         for (WebElement childContainer : childContainers) {
             try {
                 // Find all the items within the current child container
-                List<WebElement> items = childContainer.findElements(By.xpath(".//div[contains(@class, 'ng-star-inserted')]"));
+                List<WebElement> items = childContainer.findElements(By.xpath("//div[contains(@class, 'ng-star-inserted')]"));
 
                 // Check if items are present in the child container
                 if (!items.isEmpty()) {

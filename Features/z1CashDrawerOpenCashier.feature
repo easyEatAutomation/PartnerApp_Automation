@@ -6,7 +6,7 @@ Feature: Cash Drawer Open Cashier
 @smoke @sanity
   Scenario: Login with valid Credentials
     When User is on Login Page
-    Then User enters "mahmood.prod@easyeat.ai" and "mahmood@A438"
+    Then User enters "qa.automation@easyeat.ai" and "ajai1234"
     And Click on Login button
     Then User should get logged in
     And Message displayed Login Successfully
@@ -17,7 +17,28 @@ Feature: Cash Drawer Open Cashier
     Then click on SignIn button
     Then it will redirect to the dashboard
 	  When User clicks on AutomateSMS if available
-#	
+	
+
+
+
+  #@smoke @sanity
+  #Scenario: Launch EasyEat Partner
+  #Given I open application
+#
+  #@smoke @sanity
+  #Scenario: Login with valid Credentials 
+    #When User is on Login Page
+    #Then User enters mobile credentials "ajai@easyeat.ai" and "ajai1234"
+    #And Click on app Login button
+    #Then User should get logged in
+    #And Message displayed Login Successfully on app
+    #Then user click mobilePIN "1"
+    #Then user click mobilePIN "2"
+    #Then user click mobilePIN "4"
+    #Then user click mobilePIN "1"
+    #Then click on SignIn button on App
+    #Then it will redirect to the dashboard
+    
 	Scenario: Cash Drawer Open Cashier
 		
 	

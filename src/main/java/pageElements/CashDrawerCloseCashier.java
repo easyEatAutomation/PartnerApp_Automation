@@ -15,17 +15,11 @@ public class CashDrawerCloseCashier extends WebBase {
 
 	public static WebDriver driver;
 	
-
-	private By closeCashier = By.xpath("//*[@id=\"mat-dialog-10\"]/app-open-drawer/div/div[2]/div/div/div[1]");
-
-	
+	private By closeCashier = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-open-drawer/div/div[2]/div/div/div[1]");
 	private By CashierDonebutton = By.xpath("//*[@id=\"mat-dialog-6\"]/app-cashier-confirmation/div/div[2]/div[2]/div/button[2]");
-	
-	private By cashierConfirmationButton = By.xpath("//*[@id=\"mat-dialog-11\"]/app-cashier-confirmation/div/div[2]/div[2]/div/button[2]");
-
-	private By Donebutton = By.xpath("//*[@id=\"mat-dialog-12\"]/app-update-cashier/div/div/div[3]/button");
-	
-	private By CashierReportDoneButton1 = By.xpath("//*[@id=\"mat-dialog-13\"]/app-cashier-confirmation/div/div[2]/div[3]/div[2]/div[2]/button");
+	private By cashierConfirmationButton = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-cashier-confirmation/div/div[2]/div[2]/div/button[2]");
+	private By Donebutton = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-update-cashier/div/div/div[3]/button");
+	private By CashierReportDoneButton1 = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-cashier-confirmation/div/div[2]/div[3]/div[2]/div[2]/button");
 	
 	
 	public void Opencashier() throws InterruptedException {

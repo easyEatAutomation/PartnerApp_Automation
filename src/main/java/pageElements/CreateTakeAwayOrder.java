@@ -13,16 +13,16 @@ public class CreateTakeAwayOrder extends WebBase {
 	private By CreateOrderButton = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/app-header/div/div[2]/button[2]");
 	private By TakeAwayButton = By.xpath("//*[@id=\"new-order-details-id\"]/div[1]/div/div[2]");
 	private By ItemName = By.xpath("//*[@id=\"5b971cc9d2ac4dd283e9e876e8ecc3ba\"]/div[2]/div/div[1]/img");
-	private By SettleBill = By.xpath("/html/body/app-root/body/div/div[2]/div/app-pos-order/section/div/app-cart/div/div[3]/div[2]/button");
-	private By Cash = By.xpath("/html/body/app-root/body/div/div[2]/div/app-settle/div/div/app-payment-method/div[3]/div/button[2]");
+	private By SettleBill = By.xpath("/html/body/app-root/body/div/div/div/app-pos-order/section/div/app-cart/div/div[3]/div[2]/button");
+	private By Cash = By.xpath("/html/body/app-root/body/div/div/div/app-settle/div/div/app-payment-method/div[3]/div/button[2]");
 	private By enterAmount = By.xpath("//*[@id=\"new-order-details-id\"]/div[1]/div[1]/button[2]");
 	private By nextButton = By.xpath("//*[@id=\"new-order-details-id\"]/div[2]/div/button");
 	private By pendingAmountDoneButton = By.xpath("//*[@id=\"new-order-details-id\"]/div[2]/button[2]");
-	private By DoneButtonBillingPage = By.xpath("/html/body/app-root/body/div/div[2]/div/app-settle/div/app-cart/div/div[3]/div/div");
-    private By CompleteTakeAwayOrer = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div[2]/button[2]");
-	private By PastOrderTab = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[1]/nz-tabset/div[1]/div/div/div/div/div[1]/div[2]");
-	private By RevertOrderButton = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div/button[1]");
-	private By YesDeleteButton = By.xpath ("//*[contains(@id, 'mat-dialog')]/app-revert-order/div/div[2]/button[2]");
+	private By DoneButtonBillingPage = By.xpath("/html/body/app-root/body/div/div/div/app-settle/div/app-cart/div/div[3]/div");
+    private By CompleteTakeAwayOrer = By.xpath("/html/body/app-root/body/div/div/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div[2]/button[2]");
+	private By PastOrderTab = By.xpath("/html/body/app-root/body/div/div/div[2]/app-order/div/div[1]/nz-tabset/nz-tabs-nav/div/div/div[2]/div");
+	private By RevertOrderButton = By.xpath("/html/body/app-root/body/div/div/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div/button[1]/span");
+	private By YesDeleteButton = By.xpath ("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-revert-order/div/div[2]/button[2]");
 
 	public void CreateOrderButton() throws InterruptedException {
 

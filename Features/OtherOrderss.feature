@@ -16,12 +16,13 @@ Feature: OtherOption Order
     #Then user click  "1" 
     #Then click on SignIn button
     #Then it will redirect to the dashboard
-#	
+
+	
 Scenario: Create Other Orders
   
   
     When User clicks on AutomateSMS if available
-    When User clicks on Create Order button from Dashboard
+   When user click on Create New Order button
     And User will select Other Orders from Pop up
     And User will select items from menu
     Then Click on Settle Bill button

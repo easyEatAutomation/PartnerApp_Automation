@@ -10,8 +10,8 @@ public class DeleteOrderRunningOrder extends WebBase {
 	public static WebDriver driver;
 	
 	
-private By DeleteButtonRunningOrder = By.xpath ("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[2]/div[6]/div");
-private By YesDeleteInRunning = By.xpath("//app-delete-created-order//button[contains(text(),'Yes')]");
+private By DeleteButtonRunningOrder = By.xpath ("/html/body/app-root/body/div/div/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[2]/div[6]/div");
+private By YesDeleteInRunning = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-delete-created-order/div/div[2]/button[2]");
 
 
 

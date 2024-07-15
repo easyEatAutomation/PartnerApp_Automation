@@ -6,7 +6,7 @@ Feature: Cash Drawer Close Cashier
 #@smoke @sanity
   #Scenario: Login with valid Credentials
     #When User is on Login Page
-    #Then User enters "mahmood.prod@easyeat.ai" and "mahmood@A438"    
+    #Then User enters "qa.automation@easyeat.ai" and "ajai1234"   
     #And Click on Login button
     #Then User should get logged in
     #And Message displayed Login Successfully
@@ -29,7 +29,7 @@ Feature: Cash Drawer Close Cashier
    Then select close cashier 
    And Click on Countinue button
    #Then user enters "Dilip" and "100" 
-   Then user enter name in cash out "Dilip1" and amount "100" 
+   Then user enter name in cash out "Dilip" and amount "100" 
    And User will click on Done button to close the cashier
    Then User will click on cashier Report Done button
  

@@ -9,14 +9,14 @@ public class CashDrawerCashIn extends WebBase {
 
 	public static WebDriver driver;
 	
-	private By CashIn = By.xpath("//*[@id='mat-dialog-4']//app-open-drawer/div/div[2]/div/div/div[2]");
+	private By CashIn = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-open-drawer/div/div[2]/div/div/div[2]");
 	private By Name = By.xpath("//input[contains(@formcontrolname, 'name')]");
 
 
 
 private By Amount = By.xpath("//input[contains(@formcontrolname, 'amount')]");
 
-private By CashInDoneButton = By.xpath("//*[@id=\"mat-dialog-5\"]/app-update-cash/div/div[2]/div[2]/button");
+private By CashInDoneButton = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-update-cash/div/div[2]/div[2]/button");
 
 
 

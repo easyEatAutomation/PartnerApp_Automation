@@ -14,18 +14,18 @@ public class ApplyDiscount extends WebBase {
 	public  WebDriver driver;
 	
 	
-	private By AddAmountLink = By.xpath("/html/body/app-root/body/div/div[2]/div/app-pos-order/section/div/app-cart/div/div[2]/div[3]/div[8]/p[2]");
-	private By FlatDiscount = By.xpath("//*[contains(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[2]/div[1]/div[1]/div/div[1]");
-	private By ApplyButton = By.xpath("//*[contains(@id, 'mat-dialog-')]/app-add-discount/div/div[2]/button");
-	private By SendFlat1RM = By.xpath("//app-add-discount/div/nz-tabset/div[2]/div[1]/div[1]/div/div[5]/input");
-	private By SelectCelebration = By.xpath("//app-add-discount/div/nz-tabset/div[2]/div[1]/div[2]/div/div[1]");
+	private By AddAmountLink = By.xpath("/html/body/app-root/body/div/div/div/app-pos-order/section/div/app-cart/div/div[2]/div[3]/div[6]/p[2]");
+	private By FlatDiscount = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[1]/div[1]/div/div[1]");
+	private By ApplyButton = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/div[2]/button");
+	private By SendFlat1RM = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[1]/div[1]/div/div[5]/input");
+	private By SelectCelebration = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[1]/div[2]/div/div[1]");
 	private By VerifySelectReason = By.xpath("//div[contains(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[2]/div[1]/div[2]/label");
 	private By ClickOverlay = By.xpath("/html/body/div[1]/div[4]");
-	private By PercentageDiscount = By.xpath("//*[starts-with(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[1]/div/div/div/div/div[1]/div[2]");                                   
-	private By SendPercentage = By.xpath("//*[starts-with(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[2]/div[2]/div[1]/div/div[5]/input");
-	private By percentage5Discount = By.xpath("//*[starts-with(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[2]/div[2]/div[1]/div/div[1]");
-	private By TopUpTab = By.xpath("//*[starts-with(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[1]/div/div/div/div/div[1]/div[3]");
-	private By select10RM = By.xpath("//*[starts-with(@id, 'mat-dialog-')]/app-add-discount/div/nz-tabset/div[2]/div[3]/div[1]/div/div[1]");
+	private By PercentageDiscount = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/nz-tabs-nav/div/div/div[2]/div");                                   
+	private By SendPercentage = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[2]/div[1]/div/div[5]/input");
+	private By percentage5Discount = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[2]/div[1]/div/div[1]");
+	private By TopUpTab = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/nz-tabs-nav/div/div/div[3]/div");
+	private By select10RM = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-add-discount/div/nz-tabset/div/div/div[3]/div[1]/div/div[1]");
 
 
 

@@ -6,7 +6,7 @@ Feature: Cash Drawer Cash Out
 #@smoke @sanity
   #Scenario: Login with valid Credentials
     #When User is on Login Page
-    #Then User enters "ajai@easyeat.ai" and "ajai1234"
+    #Then User enters "qa.automation@easyeat.ai" and "ajai1234"
     #And Click on Login button
     #Then User should get logged in
     #And Message displayed Login Successfully
@@ -26,5 +26,5 @@ Feature: Cash Drawer Cash Out
 	 
    When user click on Cash Drawer
    Then select Cash Out 
-   Then user enter name in cash out "Dilip1" and amount "1000" 
+   Then user enter name in cash out "Dilip1" and amount "100" 
    And click on Cash Out Done button

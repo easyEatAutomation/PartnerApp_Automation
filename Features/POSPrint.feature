@@ -1,21 +1,21 @@
 Feature: POS All Printing Events
 
-  @smoke @sanity
-  Scenario: Open Chrome Browser
-    Given I open "Chrome" browser and "https://partner.easyeat.ai/login"
- @smoke @sanity
-  Scenario: Login with valid Credentials
-    When User is on Login Page
-    Then User enters "ajai@easyeat.ai" and "ajai1234"
-    And Click on Login button
-    Then User should get logged in
-    And Message displayed Login Successfully
-    Then user click  "1" 
-    Then user click  "2" 
-    Then user click  "4" 
-    Then user click  "1" 
-    Then click on SignIn button
-    Then it will redirect to the dashboard
+  #@smoke @sanity
+  #Scenario: Open Chrome Browser
+    #Given I open "Chrome" browser and "https://partner.easyeat.ai/login"
+ #@smoke @sanity
+  #Scenario: Login with valid Credentials
+    #When User is on Login Page
+    #Then User enters "ajai@easyeat.ai" and "ajai1234"
+    #And Click on Login button
+    #Then User should get logged in
+    #And Message displayed Login Successfully
+    #Then user click  "1" 
+    #Then user click  "2" 
+    #Then user click  "4" 
+    #Then user click  "1" 
+    #Then click on SignIn button
+    #Then it will redirect to the dashboard
 	
 	@smoke	@sanity
 	Scenario: POS Print Running Order
@@ -35,7 +35,7 @@ Feature: POS All Printing Events
    @sanity
    Scenario: POS Print Past Order
    
-   Then user will select past order 
+  When user click on Past Orders tab 
    And user will on print button 
    Then click on bill print button 
    And click on Close Icon of Past Order pop up
@@ -58,6 +58,7 @@ Feature: POS All Printing Events
    And User will click on counter print button1
    And Click on final bill recipt print button1 
    And click on Close Icon of pop up1
+   
    
    
    @sanity

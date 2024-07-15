@@ -30,10 +30,11 @@ Feature: Past Revert Order
    Then Click on Settle Bill from dashboard button
    Then User will select payment option Master Card
    And Click on Paid button
-   Then user will click on done button
-   Then User will click on Complete button
-   Then user will select past order 
-   And Click on revert order
-   Then click on yes revert button 
+    #Then User will click on Done button on Pop up
+    Then User will click on Done button and Order will be created
+    Then User will click on Complete Order
+    When user click on Past Orders tab
+		  Then click on Revert Order button
+		  Then click on Yes, Revert order
    
    

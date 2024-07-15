@@ -11,12 +11,12 @@ public class CustomerInfo extends WebBase {
 	
 	public static WebDriver driver;
 	
-	private By AddCustomerDetails = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[2]/div[1]/div/div[2]/span[1]");
-	private By DialCode91 = By.xpath("//*[@id=\"new-order-details-id\"]/div/div/div/form/div[1]/div/nz-form-item[1]/nz-form-control/div/span/input");
-	private By MobileNumber = By.xpath("//*[@id=\"number\"]");
-	private By SaveButton = By.xpath("//*[@id=\"new-order-details-id\"]/div/div/button");
-	private By CustomerInfoSaveButton = By.xpath("/html/body/app-root/body/div/div[2]/div/app-pos-order/section/div/app-cart/div/div[1]/div[2]");
-	private By GrabCustomerInfo = By.xpath("/html/body/app-root/body/div/div[2]/div/app-pos-order/section/div/app-cart/div/div[1]/div[3]");
+	private By AddCustomerDetails = By.xpath("/html/body/app-root/body/div/div/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[2]/div[1]/div/div[2]/span[1]");
+	private By DialCode91 = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-cart-modal/div/div[2]/div/div/div/div/div/form/div[1]/div/nz-form-item[1]/nz-form-control/div/div/input");
+	private By MobileNumber = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-cart-modal/div/div[2]/div/div/div/div/div/form/div[1]/div/nz-form-item[2]/nz-form-control/div/div/nz-input-group/input");
+	private By SaveButton = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-cart-modal/div/div[2]/div/div/div/div/button");
+	private By CustomerInfoSaveButton = By.xpath("/html/body/app-root/body/div/div/div/app-pos-order/section/div/app-cart/div/div[1]/div[2]/span");
+	private By GrabCustomerInfo = By.xpath("/html/body/app-root/body/div/div/div/app-pos-order/section/div/app-cart/div/div[1]/div[3]/span");
 	
 
 	public void AddCustomerDetails () throws InterruptedException {

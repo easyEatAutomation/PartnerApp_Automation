@@ -22,7 +22,7 @@ Feature: Create TakeAway Orders
   
   
     When User clicks on AutomateSMS if available
-    When User clicks on Create Order button from Dashboard
+    When user click on Create New Order button
     And User will select Take Away from Pop up
     And User will select items from menu
     Then Click on Settle Bill button

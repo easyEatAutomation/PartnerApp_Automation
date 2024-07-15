@@ -20,6 +20,44 @@
     #When User clicks on AutomateSMS if available
     
     
+    #@smoke @sanity
+  #Scenario: Launch EasyEat Partner
+  #Given I open application
+#
+  #@smoke @sanity
+  #Scenario: Login with valid Credentials 
+    #When User is on Login Page
+    #Then User enters mobile credentials "ajai@easyeat.ai" and "ajai1234"
+    #And Click on app Login button
+    #Then User should get logged in
+    #And Message displayed Login Successfully on app
+    #Then user click mobilePIN "1"
+    #Then user click mobilePIN "2"
+    #Then user click mobilePIN "4"
+    #Then user click mobilePIN "1"
+    #Then click on SignIn button on App
+    #Then it will redirect to the dashboard
+    #
+    
+    
+     Scenario: Create Order and Settle Bill Dine In
+   
+   When User clicks on AutomateSMS if available
+   When user click on Create New Order button
+   Then select DineIn
+   Then select Items A
+   Then Select Items B
+   And Click on Create Order button
+   Then select table
+   When User clicks on Settle Bill
+   Then User will Cash payment option
+    Then User will select full amount
+    And Click on Next button
+    Then User will click on Done button on Pop up
+    Then User will click on Done button and Order will be created
+    
+    
+    
     
     Scenario: Create Order and Settle Dine In Bill and Change Payment option cash to others
    
@@ -137,6 +175,6 @@
  
    
    
-    #Then I close browser
+   # Then I close browser
    
  

@@ -9,12 +9,12 @@ public class CashDrawerOpenCashier extends WebBase {
 
 	public static WebDriver driver;
 
-	private By CashDrawer = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/app-header/div/div[2]/button[1]");
-	private By Opencashier = By.xpath ("//*[@id=\"mat-dialog-1\"]/app-open-drawer/div/div[2]/div/div/div[1]");
-	private By ContinueButton = By.xpath ("//*[@id=\"mat-dialog-2\"]/app-cashier-confirmation/div/div[2]/div[2]/div/button[2]");
-	private By enterusername= By.xpath ("//*[@id=\"mat-dialog-3\"]/app-update-cashier/div/div/div[2]/form/div/div[1]/input");
-	private By enteramount = By.xpath("//*[@id=\"mat-dialog-3\"]/app-update-cashier/div/div/div[2]/form/div/div[2]/div[2]/nz-input-group/span/input");
-	private By donebutton = By.xpath("//*[@id=\"mat-dialog-3\"]/app-update-cashier/div/div/div[3]/button");
+	private By CashDrawer = By.xpath("/html/body/app-root/body/div/div/div[2]/app-order/div/app-header/div/div[2]/button[1]");
+	private By Opencashier = By.xpath ("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-open-drawer/div/div[2]/div/div/div[1]");
+	private By ContinueButton = By.xpath ("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-cashier-confirmation/div/div[2]/div[2]/div/button[2]");
+	private By enterusername= By.xpath ("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-update-cashier/div/div/div[2]/form/div/div[1]/input");
+	private By enteramount = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-update-cashier/div/div/div[2]/form/div/div[2]/div[2]/nz-input-group/span/input");
+	private By donebutton = By.xpath("/html/body/div[1]/div[5]/div/mat-dialog-container/div/div/app-update-cashier/div/div/div[3]/button");
 	// Constructor if needed
 
 

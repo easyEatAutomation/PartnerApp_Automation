@@ -11,10 +11,10 @@ public class PastRevertOrder extends WebBase {
 	
 	
 private By pastrevertSelectItem = By.xpath ("//*[@id=\"mat-dialog-1\"]/app-open-drawer/div/div[2]/div/div/div[2]");
-private By SettleButtonDashboard = By.xpath ("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div[1]/button[2]"); 
-private By SelcectMasterCard = By.xpath("/html/body/app-root/body/div/div[2]/div/app-settle/div/div/app-payment-method/div[3]/div/button[3]/img");                                     
-private By MasterPaidByMasterCard = By.xpath("//*[@id=\"new-order-details-id\"]/div[2]/button");
-private By FinalPaidDoneButton = By.xpath ("/html/body/app-root/body/div/div[2]/div/app-settle/div/app-cart/div/div[3]/div/div");
+private By SettleButtonDashboard = By.xpath ("/html/body/app-root/body/div/div/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div[1]/button[2]"); 
+private By SelcectMasterCard = By.xpath("/html/body/app-root/body/div/div/div/app-settle/div/div/app-payment-method/div[3]/div/button[3]");                                     
+private By MasterPaidByMasterCard = By.xpath("/html/body/div[1]/div[3]/div/mat-dialog-container/div/div/app-cash-calculate/div/div[2]/div/div/div[2]/button");
+private By FinalPaidDoneButton = By.xpath ("/html/body/app-root/body/div/div/div/app-settle/div/app-cart/div/div[3]/div/div");
 private By CompleteOrder = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div[2]/button[2]");
 private By ClickOnPast = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[1]/nz-tabset/div[1]/div/div/div/div/div[1]/div[2]");
 private By PastRevertButton = By.xpath("/html/body/app-root/body/div/div[2]/div[2]/app-order/div/div[2]/div[3]/app-order-right/div/div[3]/div/button[1]");

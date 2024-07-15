@@ -6,7 +6,7 @@ Feature: Cash Drawer Kick
 #@smoke @sanity
   #Scenario: Login with valid Credentials
     #When User is on Login Page
-    #Then User enters "ajai@easyeat.ai" and "ajai1234"
+    #Then User enters "qa.automation@easyeat.ai" and "ajai1234"
     #And Click on Login button
     #Then User should get logged in
     #And Message displayed Login Successfully
